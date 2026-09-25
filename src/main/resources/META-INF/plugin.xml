@@ -1,11 +1,11 @@
 <idea-plugin>
-    <id>com.cleanarch.plugin</id>
-    <name>Clean Architecture Generator</name>
+    <id>com.sharon.cleanbloc.plugin</id>
+    <name>CleanBloc Architect</name>
     <vendor>Sharon</vendor>
 
     <description>
         <![CDATA[
-        <b>Clean Architecture Generator</b> is a productivity plugin designed for Flutter and mobile developers to eliminate repetitive boilerplate setup. With a single right-click, it automates the creation of a fully structured feature directory adhering to Clean Architecture principles.
+        <b>CleanBloc Architect</b> is a productivity plugin designed for Flutter and mobile developers to eliminate repetitive boilerplate setup. With a single right-click, it automates the creation of a fully structured feature directory adhering to Clean Architecture principles.
         <br><br>
         <b>Key Features:</b>
         <ul>
