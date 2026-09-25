@@ -1,0 +1,33 @@
+<idea-plugin>
+    <id>com.cleanarch.plugin</id>
+    <name>Clean Architecture Generator</name>
+    <vendor>Sharon</vendor>
+
+    <description>
+        <![CDATA[
+        <b>Clean Architecture Generator</b> is a productivity plugin designed for Flutter and mobile developers to eliminate repetitive boilerplate setup. With a single right-click, it automates the creation of a fully structured feature directory adhering to Clean Architecture principles.
+        <br><br>
+        <b>Key Features:</b>
+        <ul>
+            <li><b>Complete Folder Scaffolding</b>: Automatically generates <code>data</code> (datasources, models, repositories), <code>domain</code> (entities, repositories, usecases), and <code>presentation</code> (bloc, pages, widgets) layers.</li>
+            <li><b>Pre-linked Boilerplate Code</b>: Creates template-ready domain repository interfaces, data source classes, and connected BLoC files (_bloc.dart, _event.dart, _state.dart) with proper imports already mapped.</li>
+            <li><b>Fast & Native</b>: Lightweight, self-contained IDE extension that lets you build scalable features in seconds without manual file creation.</li>
+        </ul>
+        ]]>
+    </description>
+
+    <!-- Essential: Tells Android Studio which versions this plugin supports -->
+    <idea-version since-build="231.*" until-build="261.*" />
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <actions>
+        <action id="CleanArchitecture.GenerateFeature"
+                class="com.cleanarch.GenerateCleanFeatureAction"
+                text="Clean Arch"
+                icon="/logo.png"
+                description="Generates Clean Arch folders and BLoC files">
+            <add-to-group group-id="NewGroup" anchor="first"/>
+        </action>
+    </actions>
+</idea-plugin>
